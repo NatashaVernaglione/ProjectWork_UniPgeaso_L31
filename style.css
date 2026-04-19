@@ -452,4 +452,10 @@ button{font-family:inherit;border:none;outline:none;background:none;}
 @media (max-width:420px){
   .people-counters .counter{flex:1 1 100%;}
   .sustainability-container{grid-template-columns:1fr;gap:18px;}
+  /* annulla caratteristiche della terza card date nelle precedenti media query */
+    .sustainability-container .sustainability-card:nth-child(3) {
+      grid-column: auto;
+      justify-self: stretch;
+      max-width: 100%;
+    }
 }
